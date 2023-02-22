@@ -49,9 +49,16 @@ app.get('', (req, res) => {
     })
 })
 
+app.get('/index', (req, res) => {
+    res.render('index', {
+        title: 'Weather',
+        aName: 'Ching Vang'
+    })
+})
+
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Me',
+        title: 'About',
         aName: 'Ching Vang'
     })
 })
